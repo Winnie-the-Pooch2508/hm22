@@ -7,7 +7,6 @@ import org.junit.jupiter.params.provider.NullAndEmptySource;
 import java.util.stream.Stream;
 
 public class Test {
-
     void shouldThrowRuntimeException_whenNo4DigitFound_inPassedArray() {
         Assertions.assertThrows(RuntimeException.class, () -> Library.extractValuesAfterFour(new int[]{1, 2, 3, 5}));
     }
@@ -31,7 +30,6 @@ public class Test {
                 Arguments.of(new int[]{1, 2, 3, 4, 5, 6, 4, 8, 9}, new int[]{8, 9})
         );
     }
-
     @ParameterizedTest
     @MethodSource("arrayWithNo1Or4DigitProvider")
     void shouldRetrieveFalse_whenNoFourNorOneDigitFound_inPassedArray(int[] inboundArray) {

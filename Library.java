@@ -16,12 +16,6 @@ public class Library {
 
         return newDigits;
     }
-
-    /*
-     * 	Написать метод, который проверяет состав массива из чисел 1 и 4.
-     * 	Если в нем нет хоть одной четверки или единицы, то метод вернет false;
-     * 	Написать набор тестов для этого метода (по 3-4 варианта входных данных).
-     */
     public static boolean checkOneOrFourDigitPresenceFoul(int[] digits) {
         return true;
     }
